@@ -14,6 +14,5 @@ setup(
         'mezzanine==3.1.10',
         'django_compressor==1.3',
         'future',
-        'defaults'
     ],
 )
