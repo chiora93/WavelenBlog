@@ -19,8 +19,8 @@ DATABASES = {
         'NAME': 'mezzanine',
         'USER': 'adminXsnWZBu',
         'PASSWORD': 'jn3L8Dk_Piq6',
-        'HOST': '$OPENSHIFT_MYSQL_DB_HOST',
-        'PORT': '$OPENSHIFT_MYSQL_DB_PORT',
+        'HOST': os.environ.get('OPENSHIFT_MYSQL_DB_HOST'),
+        'PORT': os.environ.get('OPENSHIFT_MYSQL_DB_ PORT'),
     }
 }
 
