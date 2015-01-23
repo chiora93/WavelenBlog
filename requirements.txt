@@ -1,2 +1,4 @@
 defaults
 future
+Django==1.6.10
+mezzanine==3.1.10
