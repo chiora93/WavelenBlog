@@ -11,17 +11,25 @@ ALLOWED_HOSTS = [
     '.blozzer.com.', # Also allow FQDN and subdomains
 ]
 
-TIME_ZONE = 'Europe/Rome'
+
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mezzanine',
-        'USER': 'adminXsnWZBu',
-        'PASSWORD': 'jn3L8Dk_Piq6',
-        'HOST': os.environ.get('OPENSHIFT_MYSQL_DB_HOST'),
-        'PORT': os.environ.get('OPENSHIFT_MYSQL_DB_ PORT'),
-    }
+     'default': {
+         'ENGINE': 'django.db.backends.mysql',
+         'NAME': 'mezzanine',
+         'USER': 'adminXsnWZBu',
+         'PASSWORD': 'jn3L8Dk_Piq6',
+         'HOST': os.environ.get('OPENSHIFT_MYSQL_DB_HOST'),
+         'PORT': os.environ.get('OPENSHIFT_MYSQL_DB_ PORT'),
+     }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'mezzanine',
+    #     'USER': 'root',
+    #     'PASSWORD': 'A3ternatenebrae',
+    #     'HOST': "localhost",
+    #     'PORT': "3306",
+    # }
 }
 
 SECRET_KEY = 'development-key'

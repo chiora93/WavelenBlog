@@ -10,11 +10,12 @@ USE_SOUTH = True
 
 ADMINS = (
     # ('Your Name', 'your@email.com'),
+    ('Simone Chiorazzo', 'chiora93@gmail.com'),
 )
 MANAGERS = ADMINS
 
 
-TIME_ZONE = None
+TIME_ZONE = 'Europe/Rome'
 USE_TZ = True
 USE_I18N = False
 LANGUAGE_CODE = "en"
@@ -76,6 +77,7 @@ MIDDLEWARE_CLASSES = (
 
 
 INSTALLED_APPS = (
+    "moderna",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
